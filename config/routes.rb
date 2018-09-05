@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/company', to: 'static_pages#company'
   get '/tos', to: 'static_pages#tos'
   get '/sct', to: 'static_pages#sct'
-
   get '/signup', to: 'users#new'
+  resources:users
+
 end
