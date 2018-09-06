@@ -8,8 +8,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(users_params)    # 実装は終わっていないことに注意!
+    @user = User.new(users_params)
    if @user.save
+     log_in @user #本登録実装後に変更
      flash[:success] = "仮登録が完了しました"
      redirect_to @user
    else
