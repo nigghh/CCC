@@ -2,4 +2,9 @@
 satoshi:
   name: Nakamoto Satoshi
   email: snakamoto@example.com
-  password_digest: <%= User.gigest('password') %>
+  password_digest: <%= User.digest('password') %>
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %>
